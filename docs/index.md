@@ -49,12 +49,12 @@
 
 <div style="display: flex; gap: 40px; justify-content: center;">
   <div style="display: flex; flex-direction: column; align-items: center">
-    <img src="./../about/道品空间-微信公众号.png" alt="道品空间-微信公众号" style="max-width: 200px">
+    <img src="./about/道品空间-微信公众号.png" alt="道品空间-微信公众号" style="max-width: 200px">
     <p><b>道品空间 - 微信公众号</b></p>
   </div>
   
   <div style="display: flex; flex-direction: column; align-items: center">
-    <img src="./../about/正遍知-微信公众号.png" alt="正遍知-微信公众号" style="max-width: 200px">
+    <img src="./about/正遍知-微信公众号.png" alt="正遍知-微信公众号" style="max-width: 200px">
     <p><b>正遍知-微信公众号</b></p>
   </div>
 </div>
