@@ -10,8 +10,11 @@ copyright: '道品空间 版权所有 Copyright © 2020-2025 daopinkongjian All 
 # Contents 导航
 nav:
   - 首页: 
-    - 念住禅项目简介: index.md
-  - 念住项目活动: activity.md
+    - 念住禅简介: index.md
+    - 念住项目活动: activity.md
+  - 规章制度:
+    - 禅营信约: rules-and-regulations/camp-affiance.md
+    - 义工规章: rules-and-regulations/volunteer-regulation.md
   - 义脉树枝图生成器: tools/yimaishuzhitu.html
 
 # Theme 主题设置
