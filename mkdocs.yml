@@ -9,7 +9,7 @@ copyright: '道品空间 版权所有 Copyright © 2020-2025 daopinkongjian All 
 
 # Contents 导航
 nav:
-  # - 首页: index.md
+  - 首页: index.md
   - 念住禅项目:
     - 项目简介: nianzhu/nianzhu-introduction.md
     - 项目活动: nianzhu/nianzhu-activity.md
