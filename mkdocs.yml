@@ -5,14 +5,14 @@ site_author: 道品空间
 site_url: https://daopinkongjian.github.io
 site_dir: site
 docs_dir: docs
-copyright: '道品空间 版权所有 Copyright © 2020-2025 caozuoxitong.ren All Rights Reserved.'
+copyright: '道品空间 版权所有 Copyright © 2020-2025 daopinkongjian All Rights Reserved.'
 
 # Contents 导航
 nav:
-  - 首页: index.md
-  - 公开课: class.md
-  - 工具:
-    - 义脉树枝图: tools/yimaishuzhitu.html
+  - 首页: 
+    - 念住禅项目简介: index.md
+  - 念住项目活动: activity.md
+  - 义脉树枝图生成器: tools/yimaishuzhitu.html
 
 # Theme 主题设置
 theme:
