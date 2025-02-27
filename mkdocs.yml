@@ -1,0 +1,41 @@
+# Project Information
+site_name: 道品空间
+site_description: 道品空间
+site_author: 道品空间
+site_url: https://daopinkongjian.github.io
+site_dir: site
+docs_dir: docs
+copyright: '道品空间 版权所有 Copyright © 2020-2025 caozuoxitong.ren All Rights Reserved.'
+
+# Contents 导航
+nav:
+  - 首页: index.md
+  - 公开课: class.md
+  - 工具:
+    - 义脉树枝图: tools/yimaishuzhitu.html
+
+# Theme 主题设置
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.expand
+  language: 'zh'
+  font:
+    text: 'Fira Sans'
+    code: 'Fira Mono'
+  palette:
+      # Toggle light mode
+      - scheme: default
+        primary: white
+        accent: red
+        toggle:
+          icon: material/weather-sunny
+          name: Switch to dark mode
+      # Toggle dark mode
+      - scheme: slate
+        primary: black
+        accent: teal
+        toggle:
+          icon: material/weather-night
+          name: Switch to light mode
