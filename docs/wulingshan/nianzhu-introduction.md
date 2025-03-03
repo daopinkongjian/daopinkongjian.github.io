@@ -23,3 +23,19 @@
 <p style="text-align: justify;">
 <b>【风格】</b>念住禅主要是分析性的，初期慧观较多，学员往往有“在学习心理学”的感觉，学后反应“自知提升感”者较为常见；到中阶，往往有“在练习心理技术”感，修习后“心行监控驾驭感”者较为常见；在文化意识上，形成于佛教无歪曲地认知、于东方内明修为文化的认识方面也有用。
 </p>
+
+<p style="text-align: justify;">
+<b>【项目活动信息】</b>每月网课，21堂课，每天早晨一堂；每年夏季，在高山森林公园中一期。大假期间随缘而定。
+</p>
+
+<div style="display: flex; gap: 40px; justify-content: center;">
+  <div style="display: flex; flex-direction: column; align-items: center">
+    <img src="../../about/道品空间-微信公众号.png" alt="道品空间-微信公众号" style="max-width: 200px">
+    <p><b>道品空间 - 微信公众号</b></p>
+  </div>
+  
+  <div style="display: flex; flex-direction: column; align-items: center">
+    <img src="../../about/正遍知-微信公众号.png" alt="正遍知-微信公众号" style="max-width: 200px">
+    <p><b>正遍知-微信公众号</b></p>
+  </div>
+</div>

@@ -20,11 +20,3 @@
     <p><b>正遍知-微信公众号</b></p>
   </div>
 </div>
-
-## 觉观禅 - 微信公众号
-<div style="display: flex; gap: 40px; justify-content: center;">
-  <div style="display: flex; flex-direction: column; align-items: center">
-    <img src="../觉观心身-微信公众号.png" alt="觉观心身-微信公众号" style="max-width: 200px">
-    <p><b>觉观心身 - 微信公众号</b></p>
-  </div>
-</div>
