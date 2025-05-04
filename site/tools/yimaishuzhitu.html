@@ -15,6 +15,32 @@
         })();
       </script>
     <style>
+        /* 新增字号调节按钮样式 */
+        .font-controls {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            z-index: 1;
+            display: flex;
+            gap: 5px;
+        }
+    
+        .font-controls button {
+            padding: 2px 8px;
+            font-size: 14px;
+            border-radius: 15px;
+            background: #3498db;
+            transition: all 0.3s;
+            width: auto;
+        }
+    
+        .font-controls button:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+    </style>
+    
+    <style>
         /* 新增标题样式 */
         h1 {
             text-align: center;
@@ -177,9 +203,27 @@
             <button onclick="transferText(1)">生成1 →</button>
             <button onclick="transferText(2)">生成2 →</button>
         </div>
-        <textarea id="outputArea" class="textarea-out" readonly height="auto"></textarea>
+        <!-- <textarea id="outputArea" class="textarea-out" readonly height="auto"></textarea> -->
+        <!-- 在输出textarea的容器外添加一个包裹div，并添加字号调节按钮 -->
+        <div style="position: relative;">
+            <!-- 字号调节按钮容器 -->
+            <div class="font-controls">
+                <button onclick="adjustFontSize(-1)">A-</button>
+                <button onclick="adjustFontSize(1)">A+</button>
+            </div>
+            <textarea id="outputArea" class="textarea-out" readonly height="auto"></textarea>
+        </div>
     </div>
 
+    <script>
+        // 新增字号调节功能
+        let currentFontSize = 16; // 初始字号与CSS一致
+        function adjustFontSize(step) {
+            currentFontSize += step * 1; // 每次调整2px
+            currentFontSize = Math.max(1, Math.min(24, currentFontSize)); // 限制字号范围
+            document.getElementById('outputArea').style.fontSize = currentFontSize + 'px';
+        }
+    </script>
 
     <script>
         var s = ["诶，干啥呢！\n", "阿弥陀佛，施主稍安勿躁!\n", "连续点击也是一种乐趣~\n", "点得有点多了哟!\n", "请在左侧输入目录！！！\n"];
