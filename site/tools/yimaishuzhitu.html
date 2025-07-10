@@ -220,7 +220,7 @@
         let currentFontSize = 16; // 初始字号与CSS一致
         function adjustFontSize(step) {
             currentFontSize += step * 1; // 每次调整2px
-            currentFontSize = Math.max(1, Math.min(72, currentFontSize)); // 限制字号范围
+            currentFontSize = Math.max(1, Math.min(32, currentFontSize)); // 限制字号范围
             document.getElementById('outputArea').style.fontSize = currentFontSize + 'px';
         }
     </script>
