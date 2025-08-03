@@ -24,8 +24,17 @@ nav:
   - 资料汇编工作:
     - 资料汇编工作方法: literature-extract-collect\literature-extract-collect.md
   - 义脉树枝图生成器: tools/yimaishuzhitu.html
+  - 律法宗规:
+    - 中华人民共和国宪法: precepts-tatutes\中华人民共和国宪法.md
+    - 宗教事务条例: precepts-tatutes\宗教事务条例.md
+    - 中华人民共和国教育法: precepts-tatutes\中华人民共和国教育法.md
+    - 中华人民共和国境内外国人宗教活动管理规定实施细则: precepts-tatutes\中华人民共和国境内外国人宗教活动管理规定实施细则.md
+    - 宗教活动场所财务管理办法: precepts-tatutes\宗教活动场所财务管理办法.md
+    - 宗教活动场所设立审批和登记办法: precepts-tatutes\宗教活动场所设立审批和登记办法.md
+    - 宗教教职人员备案办法: precepts-tatutes\宗教教职人员备案办法.md
+    - 互联网宗教信息服务管理办法: precepts-tatutes\互联网宗教信息服务管理办法.md
+    - 关于鼓励和规范宗教界从事公益慈善活动的意见: precepts-tatutes\关于鼓励和规范宗教界从事公益慈善活动的意见.md
   - 关于: about/about.md
-
 # Theme 主题设置
 theme:
   name: material
