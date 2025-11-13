@@ -148,7 +148,7 @@
             /*左侧数字编号div的宽度*/
             border: 3px solid #2ecc71;
             border-radius: 10px;
-            font-size: 16px;
+            font-size: 14px;
             resize: none;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
@@ -181,23 +181,40 @@
 3. 允许有空行，自动忽略空行。
 4. 若无法对齐，请调整字母、数字或标点为全角。
 5. 若无法对齐，请调整字体为宋体。
+6. 输出框右上角按钮“A-/A+”用于调整输出字体大小。
 
 下面为输入示例：
 
-念住
--念住初阶
---第一轮：念处及其如实知
----身念处
----受念处
----法念处
----心念处
----义念处
---第二轮：念住
---第三轮：念住的道学
--念住中阶
---念身七目
---禅观五步
--念住高阶"></textarea>
+生物实体
+-非细胞实体
+--病毒
+---DNA病毒
+---RNA病毒
+---反转录病毒
+--亚病毒因子
+---类病毒
+---卫星病毒
+---朊病毒
+-细胞生命
+--细菌域
+---变形菌门
+---厚壁菌门
+---放线菌门
+---蓝藻门
+--古菌域
+---广古菌门
+---泉古菌门
+---奇古菌门
+--真核生物域
+---SAR超类群
+---后鞭毛生物
+----动物界
+----真菌界
+---古虫界
+---原始质体生物
+----红藻
+----灰胞藻
+----绿色植物"></textarea>
         </div>
         <!-- 新增按钮容器 -->
         <div class="button-container">
@@ -211,13 +228,33 @@
                 <button onclick="adjustFontSize(-1)">A-</button>
                 <button onclick="adjustFontSize(1)">A+</button>
             </div>
-            <textarea id="outputArea" class="textarea-out" readonly height="auto"></textarea>
+            <textarea id="outputArea" class="textarea-out" readonly height="auto" placeholder="　　　　　　　　　　　　　┌DNA病毒
+　　　　　　　　　　┌病毒┼RNA病毒
+　　　　┌非细胞实体┤　　└反转录病毒
+　　　　│　　　　　│　　　　　┌类病毒
+　　　　│　　　　　└亚病毒因子┼卫星病毒
+　　　　│　　　　　　　　　　　└朊病毒
+生物实体┤　　　　　　　　┌变形菌门
+　　　　│　　　　┌细菌域┼厚壁菌门
+　　　　│　　　　│　　　├放线菌门
+　　　　│　　　　│　　　└蓝藻门
+　　　　│　　　　│　　　┌广古菌门
+　　　　└细胞生命┼古菌域┼泉古菌门
+　　　　　　　　　│　　　└奇古菌门
+　　　　　　　　　│　　　　　┌SAR超类群
+　　　　　　　　　│　　　　　│　　　　　┌动物界
+　　　　　　　　　│　　　　　├后鞭毛生物┤　　　
+　　　　　　　　　└真核生物域┤　　　　　└真菌界
+　　　　　　　　　　　　　　　├古虫界
+　　　　　　　　　　　　　　　│　　　　　　┌红藻
+　　　　　　　　　　　　　　　└原始质体生物┼灰胞藻
+　　　　　　　　　　　　　　　　　　　　　　└绿色植物"></textarea>
         </div>
     </div>
 
     <script>
         // 新增字号调节功能
-        let currentFontSize = 16; // 初始字号与CSS一致
+        let currentFontSize = 14; // 初始字号与CSS一致
         function adjustFontSize(step) {
             currentFontSize += step * 1; // 每次调整2px
             currentFontSize = Math.max(1, Math.min(32, currentFontSize)); // 限制字号范围
@@ -229,6 +266,18 @@
         var s = ["诶，干啥呢！\n", "阿弥陀佛，施主稍安勿躁!\n", "连续点击也是一种乐趣~\n", "点得有点多了哟!\n", "请在左侧输入目录！！！\n"];
         var tree = [];
         var cnt = 0;//无效点击次数
+
+        // 添加输入事件监听器
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputArea = document.getElementById('inputArea');
+            inputArea.addEventListener('input', function() {
+                // 使用防抖技术，避免频繁更新
+                clearTimeout(this.timer);
+                this.timer = setTimeout(() => {
+                    transferText(1); // 默认使用生成1的方式
+                }, 500); // 延迟500ms执行
+            });
+        });
 
         function transferText(type) {
             //输入交互
