@@ -10,15 +10,15 @@ site_url: https://daopinkongjian.github.io
 nav:
   - 首页: 
     - 学修项目: index.md
-    - 觉观禅简介: wulingshan/jueguan-introduction.md
-    - 念住禅简介: wulingshan/nianzhu-introduction.md
-    - 道品禅简介: wulingshan/daopin-introduction.md
-    - 止观禅简介: wulingshan/zhiguan-introduction.md
-    - 闭关营简介: wulingshan/biguan-introduction.md
-    - 禅宗修道班简介: wulingshan/chanzongxiudaoban-introduction.md
-    - 禅法专科班简介: wulingshan/chanfazhuankeban-introduction.md
+    - 觉观禅简介: projects/jueguan-introduction.md
+    - 念住禅简介: projects/nianzhu-introduction.md
+    - 道品禅简介: projects/daopin-introduction.md
+    - 止观禅简介: projects/zhiguan-introduction.md
+    - 闭关营简介: projects/biguan-introduction.md
+    - 禅宗修道班简介: projects/chanzongxiudaoban-introduction.md
+    - 禅法专科班简介: projects/chanfazhuankeban-introduction.md
   - 资料汇编工作:
-    - 资料汇编工作方法: literature-extract-collect\literature-extract-collect.md
+    - 资料汇编工作方法: literature-extract-collect/literature-extract-collect.md
   - 义脉树枝图生成器: tools/yimaishuzhitu.html
 
 # ============================================================
