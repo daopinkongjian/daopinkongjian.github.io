@@ -1,63 +1,93 @@
-# Project Information
+# ============================================================
+# 站点信息
+# ============================================================
 site_name: 道品空间
-site_description: 道品空间
-site_author: 道品空间
 site_url: https://daopinkongjian.github.io
-site_dir: site
-docs_dir: docs
-copyright: '道品空间 版权所有 Copyright © 2020-2025 daopinkongjian All Rights Reserved.'
 
-# Contents 导航
+# ============================================================
+# 导航目录
+# ============================================================
 nav:
-  # - 首页: 
-    # - 武陵山学修项目: index.md
-    # - 觉观禅简介: wulingshan/jueguan-introduction.md
-    # - 念住禅简介: wulingshan/nianzhu-introduction.md
-    # - 道品禅简介: wulingshan/daopin-introduction.md
-    # - 止观禅简介: wulingshan/zhiguan-introduction.md
-    # - 闭关营简介: wulingshan/biguan-introduction.md
-    # - 禅宗修道班简介: wulingshan/chanzongxiudaoban-introduction.md
-    # - 禅法专科班简介: wulingshan/chanfazhuankeban-introduction.md
-  # - 念住禅项目:
-    # - 项目缘起: nianzhu/nianzhu-origin-devolop.md
-    # - 项目活动: nianzhu/nianzhu-activity.md
+  - 首页: 
+    - 学修项目: index.md
+    - 觉观禅简介: wulingshan/jueguan-introduction.md
+    - 念住禅简介: wulingshan/nianzhu-introduction.md
+    - 道品禅简介: wulingshan/daopin-introduction.md
+    - 止观禅简介: wulingshan/zhiguan-introduction.md
+    - 闭关营简介: wulingshan/biguan-introduction.md
+    - 禅宗修道班简介: wulingshan/chanzongxiudaoban-introduction.md
+    - 禅法专科班简介: wulingshan/chanfazhuankeban-introduction.md
   - 资料汇编工作:
     - 资料汇编工作方法: literature-extract-collect\literature-extract-collect.md
   - 义脉树枝图生成器: tools/yimaishuzhitu.html
-  - 律法宗规:
-    - 中华人民共和国宪法: precepts-tatutes\中华人民共和国宪法.md
-    - 宗教事务条例: precepts-tatutes\宗教事务条例.md
-    - 中华人民共和国教育法: precepts-tatutes\中华人民共和国教育法.md
-    - 中华人民共和国境内外国人宗教活动管理规定实施细则: precepts-tatutes\中华人民共和国境内外国人宗教活动管理规定实施细则.md
-    - 宗教活动场所财务管理办法: precepts-tatutes\宗教活动场所财务管理办法.md
-    - 宗教活动场所设立审批和登记办法: precepts-tatutes\宗教活动场所设立审批和登记办法.md
-    - 宗教教职人员备案办法: precepts-tatutes\宗教教职人员备案办法.md
-    - 互联网宗教信息服务管理办法: precepts-tatutes\互联网宗教信息服务管理办法.md
-    - 关于鼓励和规范宗教界从事公益慈善活动的意见: precepts-tatutes\关于鼓励和规范宗教界从事公益慈善活动的意见.md
-    # - 禅营信约: precepts-tatutes\禅营信约.md
-  # - 关于: about/about.md
-# Theme 主题设置
+
+# ============================================================
+# 主题设置
+# ============================================================
 theme:
   name: material
   features:
     - navigation.tabs
     - navigation.expand
-  language: 'zh'
+  language: zh
   font:
-    text: 'Fira Sans'
-    code: 'Fira Mono'
+    text: Fira Sans
+    code: Fira Mono
   palette:
-      # Toggle light mode
-      - scheme: default
-        primary: white
-        accent: red
-        toggle:
-          icon: material/weather-sunny
-          name: Switch to dark mode
-      # Toggle dark mode
-      - scheme: slate
-        primary: black
-        accent: teal
-        toggle:
-          icon: material/weather-night
-          name: Switch to light mode
+    - scheme: default
+      primary: white
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+# ============================================================
+# 底部版权信息
+# ============================================================
+copyright:
+  本站总访问量 <span id="vercount_value_site_pv">Loading</span> 次 ·
+  访客数 <span id="vercount_value_site_uv">Loading</span> 人
+  <br>
+  道品空间 版权所有 Copyright © 2020 - present daopinkongjian All Rights Reserved.
+
+# ============================================================
+# Markdown 扩展
+# ============================================================
+markdown_extensions:
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+      tex_inline_wrap: ['\(', '\)', '$', '$']
+      tex_block_wrap: ['\[', '\]', '$$', '$$']
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {}
+
+# ============================================================
+# 额外加载的 JavaScript（按顺序）
+# ============================================================
+extra_javascript:
+  # MathJax：先配置，后主库
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+  # Mermaid：先主库，后初始化
+  - javascripts/mermaid.min.js
+  - javascripts/mermaid.js
+
+  # 外链新标签打开
+  - javascripts/external-links.js
+
+  # 访问计数器
+  - https://vercount.one/js
