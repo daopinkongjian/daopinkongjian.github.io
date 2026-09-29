@@ -2,7 +2,7 @@
 # 站点信息
 # ============================================================
 site_name: 道品空间
-site_url: https://daopinkongjian.github.io
+site_url: https://daopin.space
 
 # ============================================================
 # 导航目录
@@ -19,7 +19,7 @@ nav:
     - 禅法专科班简介: projects/chanfazhuankeban-introduction.md
   - 资料汇编工作:
     - 资料汇编工作方法: literature-extract-collect/literature-extract-collect.md
-  - 义脉树枝图生成器: tools/yimaishuzhitu.html
+  - 义脉树枝图生成器↗: tools/yimaishuzhitu.html
 
 # ============================================================
 # 主题设置
