@@ -227,6 +227,94 @@
             background: transparent;
         }
     </style>
+
+    <!-- ===== MkDocs 风格页脚样式 ===== -->
+    <style>
+        .md-footer {
+            width: 100%;
+            align-self: stretch;
+            margin-top: 40px;
+            font-size: 0.64rem;
+            color: #4a5568;
+            background-color: #f0f4f8;
+        }
+
+        .md-footer-meta {
+            padding: 1rem 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.07);
+        }
+
+        .md-footer-meta__inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 61rem;
+            margin: 0 auto;
+            padding: 0 1rem;
+            gap: 1rem;
+        }
+
+        .md-copyright {
+            text-align: center;
+            line-height: 1.6;
+            flex: 1;
+        }
+
+        .md-copyright__highlight {
+            color: #2c3e50;
+            font-size: 0.75rem;
+        }
+
+        .md-copyright a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .md-copyright a:hover {
+            text-decoration: underline;
+        }
+
+        .md-social {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .md-social__link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            color: #2c3e50;
+            background-color: rgba(0, 0, 0, 0.05);
+            transition: background-color 0.25s, color 0.25s;
+        }
+
+        .md-social__link:hover {
+            background-color: #e74c3c;
+            color: #ffffff;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .md-footer {
+                background-color: #1e1e1e;
+                color: #b0b0b0;
+            }
+            .md-footer-meta {
+                border-top-color: rgba(255, 255, 255, 0.1);
+            }
+            .md-copyright__highlight,
+            .md-copyright a {
+                color: #d0d0d0;
+            }
+            .md-social__link {
+                color: #d0d0d0;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -331,6 +419,26 @@
 　　　　　　　　　　　　　　　　　　　　　　└绿色植物"></textarea>
         </div>
     </div>
+
+    <!-- ===== MkDocs 风格页脚 ===== -->
+    <footer class="md-footer">
+        <div class="md-footer-meta md-typeset">
+            <div class="md-footer-meta__inner md-grid">
+                <div class="md-copyright">
+                    <div class="md-copyright__highlight">
+                        本站总访问量 <span id="vercount_value_site_pv">Loading</span> 次 ·
+                        访客数 <span id="vercount_value_site_uv">Loading</span> 人
+                        <br>
+                        <a href="https://daopin.space" target="_blank" rel="noopener">道品空间</a> 版权所有 Copyright © 2020 - present daopin.space All Rights Reserved.
+                    </div>
+                    Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">Material for MkDocs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- VerCount 访问计数器 -->
+    <script defer src="https://vercount.one/js"></script>
 
     <script>
         /* ========== 字号调节 + 默认恢复 ========== */
